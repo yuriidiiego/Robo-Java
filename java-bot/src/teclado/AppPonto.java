@@ -2,7 +2,10 @@ package teclado;
 
 import java.awt.*;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+
 import javax.swing.JOptionPane;
+
 
 public class AppPonto {
 
@@ -61,7 +64,7 @@ public class AppPonto {
   }
 
   private static boolean horarioDeTrabalho() {
-    String horario = new java.text.SimpleDateFormat("HH:mm")
+    String horario = new SimpleDateFormat("HH:mm")
     .format(new java.util.Date());
     return (
       horario.equals("9") ||
